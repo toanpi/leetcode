@@ -1,0 +1,91 @@
+-- 18/10 -- : Done
+- Design
+ + 225: Done
+ + 859: Done
+- Devide and Conquer
+ + 169: Done
+
+-- 19/10 -- : Done
+- Dynamic Programming
+ + 303: Done
+ + 868: Done
+ + 1051: Done
+
+-- 20/10 -- : Done
+- Graph
+ + 511: Done
+ + 999: Done
+  - Greedy
+ + 392: Done
+ + 917: Done
+
+-- 21/10 -- : Done
+- Hash Table 
+ + 202: Done
+ + 290: Done
+ + 1122: Done
+- Heap
+ + 836: Done
+
+-- 22/10 --
+Skip
+-- 23/10 --
+Skip
+
+-- 24/10 --
+- Link List
+ + 21: Done
+ + 206: Done
+ + 908: Done
+
+25/10
+- Math
+ + 13: Done
+ + 69: Done
+ + 1148: Skip
+
+25/10
+- Ordered Map
+ + 876: Done
+- Queue
+ + 860: Done
+ + 892: Done
+
+25/10
+- Random
+ + 914: Done
+- Sliding Window
+ + 1037: Done
+ + 1046: Done
+
+26/10
+- Sort
+ + 242: Done
+ + 350: Done
+- Stack
+ + 496: Done
+ + 1128: Done
+
+27/10
+- String
+ + 14: Done
+ + 58: Done
+ + 929: Done
+
+28/10
+- Tree
+ + 112: Done
+ + 572: Done --> Improving
+ + 1030: Skip
+
+29/10
+- Trie
+ + 746: Done
+- Two Pointer
+ + 344: Done
+ + 961: Done
+
+30/10
+- Union Find
+ + 821: Done
+ + 989: Done
