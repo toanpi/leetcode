@@ -11,24 +11,28 @@ class Solution
 public:
     int findPairs(vector<int> &nums, int k)
     {
-        unordered_multimap<int, int> db;
+        {ios_base::sync_with_stdio(false);cin.tie(nullptr);}
+        
+        unordered_map<int, int> db;
+        int cnt = 0;
 
         for (int i = 0; i < nums.size(); i++)
         {
             db.insert({nums[i], i});
         }
-        
+
         for (int i = 0; i < nums.size(); i++)
         {
-            unordered_multimap<int, int>::iterator key = db.find(nums[i] + k);
+            auto itr = db.find(nums[i] + k);
 
-            if(key != db.end())
+            if (itr != db.end() && itr->second != i)
             {
-                
+                cnt++;
+                db.erase(nums[i] + k);
             }
         }
 
-
+        return cnt;
     }
 };
 // @lc code=end
