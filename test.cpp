@@ -7,8 +7,7 @@
 #define AS(arr)  (sizeof((arr))/sizeof((arr)[0]))
 
 // #include ""
-#include "532.k-diff-pairs-in-an-array.cpp"
-// #include "81.search-in-rotated-sorted-array-ii.cpp"
+#include "394.decode-string.cpp"
 
 
 Solution sol;
@@ -24,12 +23,13 @@ int main(void)
   int tree[] = {2, 2,2};
   struct TreeNode *a = build(tree, sizeof(tree) / sizeof(int));
 
-  vector<int> v = {4,5,1,7,1,1,2};
+  vector<int> v = {1, 2, 2};
 
   vector<vector<int>> matrix = {{1,2,3,4},{5,6,7,8},{9,10,11,12}};
   // vector<vector<int>> matrix = {{1,2,3},{4,5,6},{7,8,9}};
+  string s = "3[a]2[bc]";
 
-  sol.findPairs(v, 5);
+  sol.decodeString(s);
 
   return 0;
 }

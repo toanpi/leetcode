@@ -5,12 +5,12 @@
 /* A binary tree node has data,
 pointer to left child and a
 pointer to right child */
-struct TreeNode
-{
-  int val;
-  struct TreeNode *left;
-  struct TreeNode *right;
-};
+// struct TreeNode
+// {
+//   int val;
+//   struct TreeNode *left;
+//   struct TreeNode *right;
+// };
 
 #define NULL_NODE   -10000000
 
