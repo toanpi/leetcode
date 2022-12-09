@@ -14,6 +14,16 @@
     "vector": "cpp",
     "chrono": "cpp",
     "span": "cpp",
-    "string": "cpp"
+    "string": "cpp",
+    "__hash_table": "cpp",
+    "set": "cpp",
+    "__split_buffer": "cpp",
+    "__tree": "cpp",
+    "list": "cpp",
+    "map": "cpp",
+    "queue": "cpp",
+    "random": "cpp",
+    "stack": "cpp",
+    "unordered_set": "cpp"
   },
 }
