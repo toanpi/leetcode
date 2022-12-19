@@ -6,9 +6,10 @@
 
 #define AS(arr)  (sizeof((arr))/sizeof((arr)[0]))
 
-// #include ""
-#include "309.best-time-to-buy-and-sell-stock-with-cooldown.cpp"
+// #include "object_Oriented_Graph.cpp"
 
+// #include ""
+#include "316.remove-duplicate-letters.cpp"
 
 
 Solution sol;
@@ -26,7 +27,7 @@ int main(void)
 
   vector<int> v = {6, 1, 3, 2, 4, 7};
 
-  vector<vector<int>> matrix = {{1,2,3,4},{5,6,7,8},{9,10,11,12}};
+  vector<vector<int>> matrix = {{1,2},{1,3},{2,3}};
   vector<vector<char>> matrixC = {{'1','1','0','1'},{'1','1','0','1'},{'1','1','1','1'}};
   string s = "2611055971756562";
   vector<vector<string>> accounts =
@@ -39,8 +40,8 @@ int main(void)
   //  {"John", "johnsmith@mail.com", "john00@mail.com"},
   //  {"Mary", "mary@mail.com"},
   //  {"John", "johnnybravo@mail.com"}};
-
-  sol.maxProfit(v);
+    
+  sol.removeDuplicateLetters("bcabc");
 
   return 0;
 }
