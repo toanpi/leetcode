@@ -3,4 +3,8 @@ Bí :
 131
 721
 96
+264: ugly number II --> Heap
+880: Decoded String at Index
+375 Guess Number Higher or Lower II
+464 Can I win --> minimax Skill
 

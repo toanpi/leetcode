@@ -6,8 +6,8 @@
   "configurations": [
     {
       "name": "Debug",
-      // "type": "lldb",
-      "type": "cppdbg",
+      "type": "lldb",
+      // "type": "cppdbg",
       "request": "launch",
       "program": "${workspaceFolder}/test",
       "args": [],
@@ -15,7 +15,7 @@
       "cwd": "${workspaceFolder}",
       // "environment": [],
       // "externalConsole": false,
-      "MIMode": "lldb",
+      // "MIMode": "lldb",
       "preLaunchTask": "build"
     }
   ]

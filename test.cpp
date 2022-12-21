@@ -9,7 +9,7 @@
 // #include "object_Oriented_Graph.cpp"
 
 // #include ""
-#include "316.remove-duplicate-letters.cpp"
+#include "464.can-i-win.cpp"
 
 
 Solution sol;
@@ -27,7 +27,7 @@ int main(void)
 
   vector<int> v = {6, 1, 3, 2, 4, 7};
 
-  vector<vector<int>> matrix = {{1,2},{1,3},{2,3}};
+  vector<vector<int>> matrix = {{0,2},{1,3},{2,4},{3,5},{4,6}};
   vector<vector<char>> matrixC = {{'1','1','0','1'},{'1','1','0','1'},{'1','1','1','1'}};
   string s = "2611055971756562";
   vector<vector<string>> accounts =
@@ -41,7 +41,7 @@ int main(void)
   //  {"Mary", "mary@mail.com"},
   //  {"John", "johnnybravo@mail.com"}};
     
-  sol.removeDuplicateLetters("bcabc");
+  sol.canIWin(10, 11);
 
   return 0;
 }
