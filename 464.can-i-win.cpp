@@ -9,44 +9,39 @@
 class Solution
 {
 public:
-    bool check(int k, vector<int> &n, unordered_map<int, vector<int>> &db)
+    bool check(int k, int n, vector<char> &db, int m)
     {
-        if (db.find(k) != db.end() && equal(n.begin(), n.end(), db[k].begin() + 1))
+        if (db[n] != -1)
         {
-            return db[k][0] == 1;
+            return db[n];
         }
 
         bool canWin = false;
 
-        for (int i = 1; i < n.size() && !canWin; ++i)
+        for (int i = 0; i < m && !canWin; ++i)
         {
-            if (n[i] > 0)
+            if ((n & (1 << i)) == 0)
             {
-                n[i] = -1;
-
-                canWin = k <= i || !check(k - i, n, db);
-
-                n[i] = i;
+                canWin = k <= (i + 1) || !check(k - i - 1, (n | (1 << i)), db, m);
             }
         }
 
-        db[k].push_back(canWin);
-        db[k].insert(db[k].begin(), n.begin(), n.end());
-
-        return canWin;
+        return db[n] = canWin;
     }
 
-    bool canIWin(int maxChoosableInteger, int desiredTotal)
+    bool canIWin(int m, int k)
     {
-        vector<int> n(maxChoosableInteger + 1);
-        unordered_map<int, vector<int>> db;
-
-        for (int i = 1; i <= maxChoosableInteger; ++i)
+        if (m * (m + 1) < k * 2)
         {
-            n[i] = i;
+            return false;
+        }
+        else if (!k)
+        {
+            return true;
         }
 
-        return check(desiredTotal, n, db);
+        vector<char> db(1 << m, -1);
+        return check(k, 0, db, m);
     }
 };
 // @lc code=end

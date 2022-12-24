@@ -9,7 +9,7 @@
 // #include "object_Oriented_Graph.cpp"
 
 // #include ""
-#include "464.can-i-win.cpp"
+#include "969.pancake-sorting.cpp"
 
 
 Solution sol;
@@ -25,7 +25,8 @@ int main(void)
   int tree[] = {2, 2,2};
   struct TreeNode *a = build(tree, sizeof(tree) / sizeof(int));
 
-  vector<int> v = {6, 1, 3, 2, 4, 7};
+  vector<int> v = {3, 2, 4, 1};
+  vector<char> c = {'A','A','A','B','B','B'};
 
   vector<vector<int>> matrix = {{0,2},{1,3},{2,4},{3,5},{4,6}};
   vector<vector<char>> matrixC = {{'1','1','0','1'},{'1','1','0','1'},{'1','1','1','1'}};
@@ -41,7 +42,7 @@ int main(void)
   //  {"Mary", "mary@mail.com"},
   //  {"John", "johnnybravo@mail.com"}};
     
-  sol.canIWin(10, 11);
+  sol.pancakeSort(v);
 
   return 0;
 }
