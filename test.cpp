@@ -9,7 +9,7 @@
 // #include "object_Oriented_Graph.cpp"
 
 // #include ""
-#include "969.pancake-sorting.cpp"
+#include "524.longest-word-in-dictionary-through-deleting.cpp"
 
 
 Solution sol;
@@ -25,12 +25,18 @@ int main(void)
   int tree[] = {2, 2,2};
   struct TreeNode *a = build(tree, sizeof(tree) / sizeof(int));
 
-  vector<int> v = {3, 2, 4, 1};
-  vector<char> c = {'A','A','A','B','B','B'};
+  vector<int> v = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                   0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                   0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                   0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                   0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+  vector<char> c = {'A', 'A', 'A', 'B', 'B', 'B'};
 
   vector<vector<int>> matrix = {{0,2},{1,3},{2,4},{3,5},{4,6}};
   vector<vector<char>> matrixC = {{'1','1','0','1'},{'1','1','0','1'},{'1','1','1','1'}};
   string s = "2611055971756562";
+  vector<string> dic = {"ale","apple","monkey","plea"};
+
   vector<vector<string>> accounts =
   {{"David","David0@m.co","David1@m.co"},
    {"David","David2@m.co","David3@m.co"},
@@ -41,8 +47,8 @@ int main(void)
   //  {"John", "johnsmith@mail.com", "john00@mail.com"},
   //  {"Mary", "mary@mail.com"},
   //  {"John", "johnnybravo@mail.com"}};
-    
-  sol.pancakeSort(v);
+  
+  sol.findLongestWord("abpcplea", dic);
 
   return 0;
 }

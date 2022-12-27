@@ -8,4 +8,6 @@ Bí :
 375 Guess Number Higher or Lower II
 464 Can I win --> minimax Skill
 1017 Convert to base 2
+894 ALl possible binary tree
+456 132 Pattern
 
