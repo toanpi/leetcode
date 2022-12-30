@@ -9,10 +9,10 @@
 // #include "object_Oriented_Graph.cpp"
 
 // #include ""
-#include "524.longest-word-in-dictionary-through-deleting.cpp"
+#include "208.implement-trie-prefix-tree.cpp"
 
 
-Solution sol;
+// Solution sol;
 
 int main(void)
 {
@@ -35,7 +35,8 @@ int main(void)
   vector<vector<int>> matrix = {{0,2},{1,3},{2,4},{3,5},{4,6}};
   vector<vector<char>> matrixC = {{'1','1','0','1'},{'1','1','0','1'},{'1','1','1','1'}};
   string s = "2611055971756562";
-  vector<string> dic = {"ale","apple","monkey","plea"};
+  vector<string> dic1 = {"amazon"};
+  vector<string> dic2 = {"e", "o"};
 
   vector<vector<string>> accounts =
   {{"David","David0@m.co","David1@m.co"},
@@ -48,7 +49,12 @@ int main(void)
   //  {"Mary", "mary@mail.com"},
   //  {"John", "johnnybravo@mail.com"}};
   
-  sol.findLongestWord("abpcplea", dic);
+  Trie* obj = new Trie();
+  obj->insert("apple");
+  bool param_2 = obj->search("apple");
+  bool param_3 = obj->startsWith("app");
+
+  // sol.
 
   return 0;
 }
